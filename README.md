@@ -1,3 +1,4 @@
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17908283.svg)](https://doi.org/10.5281/zenodo.17908283)
 \documentclass[11pt,a4paper]{article}
 
 \usepackage[utf8]{inputenc}
