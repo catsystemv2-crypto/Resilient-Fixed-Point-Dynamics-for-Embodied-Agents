@@ -1,6 +1,8 @@
-\documentclass[12pt]{article}
+cff-version: 1.2.0
+title: "Poetic ↔ Technical Dynamics Lexicon for Transformer Systems"
+author:catsystemv2 "Copyright IP 2026"
 
-% Minimal packages for GitHub and Overleaf compatibility
+\documentclass[12pt]{article}
 \usepackage{geometry}
 \usepackage{lmodern}
 \usepackage{setspace}
