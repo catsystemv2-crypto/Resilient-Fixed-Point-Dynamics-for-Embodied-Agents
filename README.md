@@ -164,7 +164,7 @@ then the response collapses to uniformity:
 \operatorname{resp}_a = \operatorname{resp} \qquad \text{(identical for every axis)}
 \end{equation}
 
-Even if small idiosyncratic perturbations $\Delta e_a \ll 1$ are introduced,
+Even if small idiosyncratic perturbations {\rm resp}_a = {\rm resp} \qquad \text{(identical for every axis)} are introduced,
 the differential in $\operatorname{resp}_a$ remains tiny ($\mathcal{O}(\Delta e_a)$) and is subsequently annihilated by the global normalization step:
 
 \begin{equation}
