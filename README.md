@@ -165,7 +165,7 @@ then the response collapses to uniformity:
 \end{equation}
 
 Even if small idiosyncratic perturbations {\rm resp}_a = {\rm resp} \qquad \text{(identical for every axis)} are introduced,
-the differential in $\operatorname{resp}_a$ remains tiny ($\mathcal{O}(\Delta e_a)$) and is subsequently annihilated by the global normalization step:
+the differential remains tiny ($\mathcal{O}(\Delta e_a)$) and is subsequently annihilated by the global normalization step:
 
 \begin{equation}
 w_a \leftarrow \frac{\text{raw}_a}{\sum\limits_{b} \text{raw}_b}, \qquad \text{where } \text{raw}_a \propto w_a + \operatorname{resp}.
