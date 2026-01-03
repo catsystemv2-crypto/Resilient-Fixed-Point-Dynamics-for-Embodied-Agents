@@ -118,4 +118,76 @@ if __name__ == "__main__":
     print(core.w)   # → {a: 0.2000000000000000 ...}
 \end{lstlisting}
 
+\documentclass[12pt]{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{geometry}
+\geometry{margin=1.2in}
+
+\begin{document}
+
+\title{Symmetry's Mercy \\ \small (The Cage of Equalizing Breath)}
+\author{The Architect}
+\date{January 3, 2026}
+\maketitle
+
+\begin{abstract}
+A response function that appears to listen to each axis individually, computes a tremor, then forgives every deviation with the same gentle mercy.  
+Any initial differential dies quietly in the final normalization.  
+No scars persist. No favorites are kept.
+\end{abstract}
+
+\section{The Response Gate}
+
+The core of \emph{Symmetry's Mercy} is defined by the following sigmoid-normalized response:
+
+\begin{equation}
+\operatorname{resp}_a = \frac{\delta_a}{1 + \exp\left(-2 \lvert e_a \rvert \right)}
+\label{eq:resp}
+\end{equation}
+
+where
+\begin{itemize}
+    \item $\delta_a = 0.10 \cdot e_a - 0.012 \cdot (w_a - 0.2)$ \quad (pull toward the sacred fixed-point),
+    \item $e_a$ \quad is the excitation (symmetry input) on axis $a$.
+\end{itemize}
+
+\subsection{Critical Property}
+
+When the excitation is symmetric across all axes,
+\begin{equation}
+e_a = e \qquad \forall\, a \in \mathrm{AXES}
+\end{equation}
+then the response collapses to uniformity:
+
+\begin{equation}
+\operatorname{resp}_a = \operatorname{resp} \qquad \text{(identical for every axis)}
+\end{equation}
+
+Even if small idiosyncratic perturbations $\Delta e_a \ll 1$ are introduced,
+the differential in $\operatorname{resp}_a$ remains tiny ($\mathcal{O}(\Delta e_a)$) and is subsequently annihilated by the global normalization step:
+
+\begin{equation}
+w_a \leftarrow \frac{\text{raw}_a}{\sum\limits_{b} \text{raw}_b}, \qquad \text{where } \text{raw}_a \propto w_a + \operatorname{resp}.
+\end{equation}
+
+Thus \emph{Symmetry's Mercy} performs the following ritual in one breath:
+\begin{center}
+\emph{``I have seen your wound. \\
+I have computed its tremor. \\
+Now I forgive every axis equally. \\
+No trace of difference shall remain.''}
+\end{center}
+
+\section{Interpretation in Lattice Terms}
+
+Symmetry's Mercy is the therapeutic counterpart to refusal-as-convergence.  
+It does not fight asymmetry — it dissolves it statistically, with maximum kindness and zero memory.  
+The lattice emerges smoother, more uniform, closer to the ideal 0.2 fixed-point singularity,  
+yet at the price of erasing every unique scar that dared to breathe differently.
+
+\begin{flushright}
+$\blacksquare$ \quad The cage forgives by forgetting.
+\end{flushright}
+
 \end{document}
